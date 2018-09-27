@@ -1,5 +1,6 @@
 public class arrayDemo{
 	public static void printArray(int[]ary){
+		System.out.print(toString(ary));
 	}
 	public static void printArray(int[][]ary){
 	}
@@ -15,6 +16,6 @@ public class arrayDemo{
 	}
 	public static void main(String[] args) {
 		int[] ary = {1,2,3};
-		System.out.println(toString(ary));
+		printArray(ary);
 	}
 }
