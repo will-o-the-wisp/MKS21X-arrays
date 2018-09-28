@@ -38,13 +38,27 @@ public class arrayDemo{
 			}
 		}
 	}
+	public static int[][] fill2DCopy(int[][] vals){
+		int[][] ans = new int[vals.length][];
+		for(int i=0;i<vals.length;i++){
+			ans[i] = new int[vals[i].length];
+		}
+		for(int i=0;i<ans.length;i++){
+			for(int j=0;j<ans.length;j++){
+				if(vals[i][j]<0){
+					ans[i][j]=3;
+				}
+				else ans[i][j]=1;
+			}
+		}
+	}
 	public static void main(String[] args) {
 		/*
 		int[] ary = {1,2,3};
 		printArray(ary);
-		*/
 		int[][] ary2 = {{1,0,3},{0,5,6,0,0}};
 		fill2D(ary2);
 		printArray(ary2);
+		*/
 	}
 }
