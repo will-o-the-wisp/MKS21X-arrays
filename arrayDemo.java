@@ -3,6 +3,9 @@ public class arrayDemo{
 		System.out.print(toString(ary));
 	}
 	public static void printArray(int[][]ary){
+		for(int i = 0;i < ary.length;i++){
+			System.out.println(toString(ary));
+		}
 	}
 	public static String toString(int[]ary){
 		String ans = "{";
