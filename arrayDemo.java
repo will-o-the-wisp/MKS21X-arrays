@@ -44,21 +44,22 @@ public class arrayDemo{
 			ans[i] = new int[vals[i].length];
 		}
 		for(int i=0;i<ans.length;i++){
-			for(int j=0;j<ans.length;j++){
+			for(int j=0;j<ans[i].length;j++){
 				if(vals[i][j]<0){
 					ans[i][j]=3;
 				}
 				else ans[i][j]=1;
 			}
 		}
+		return ans;
 	}
 	public static void main(String[] args) {
 		/*
 		int[] ary = {1,2,3};
 		printArray(ary);
-		int[][] ary2 = {{1,0,3},{0,5,6,0,0}};
-		fill2D(ary2);
-		printArray(ary2);
+		
+		int[][] ary2 = {{1,-5,3},{0,-1,-1,0,0}};
+		printArray(fill2DCopy(ary2));
 		*/
 	}
 }
